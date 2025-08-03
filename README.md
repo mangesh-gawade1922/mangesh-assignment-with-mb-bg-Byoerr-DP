@@ -16,13 +16,13 @@ Tested in following common screen resolutions:
 
 WCAG 2.1 AA Compliant: Built with a focus on accessibility to ensure the site is usable by everyone, including people with disabilities.
 
-Semantic HTML5 Structure: Uses modern HTML5 tags (<header>, <main>, <section>, <nav>, <footer>) for better SEO and accessibility.
+Semantic HTML5 Structure: Uses modern HTML5 tags [ header, main, section, nav, footer ] for better SEO and accessibility.
 
 Interactive Carousels: Smooth, touch-friendly carousels for "Destinations" and "Testimonials" sections, create using Swiper.js.
 
 Performance Optimized: Implements best practices like lazy loading for images to ensure fast load times.
-
-Tech Stack
+<br /><br /><br />
+**Tech Stack** <br />
 HTML5: For the core structure and content.
 
 CSS3: For custom styling and layout.
@@ -38,31 +38,24 @@ gulpfile.js: For automate or minified css and js files(minified files compiled d
 Project Structure
 The project follows a standard and intuitive file structure:
 
-.
-├── index.html # The main HTML file
-├── dist/css/
-│ └── app-style.css # Custom stylesheets
-├── dist/js/
-│ └── main.js # Custom JavaScript for initialization
-├── dist/images/ # Folder for all image assets
-└── vendor/ # Folder for third-party libraries (e.g., Swiper.js)
+<img width="901" height="363" alt="tree-map" src="https://github.com/user-attachments/assets/90b38a83-da22-4c02-adaf-689f102fc946" />
+
 
 Setup and Usage
 This is a static website and does not require a complex build process.
 
 1. Clone the repository:
 
-git clone [https://github.com/mangesh-gawade1922/digital-polygon-assignment---bkup-last.git](https://github.com/your-username/digital-polygon-assignment---bkup-last.git)
+(git clone [https://github.com/mangesh-gawade1922/mangesh-assignment-with-mb-bg-Byoerr-DP.git](https://github.com/mangesh-gawade1922/mangesh-assignment-with-mb-bg-Byoerr-DP.git))
 
 2. Navigate to the project directory:
 
-cd digital-polygon-assignment---bkup-last
+cd mangesh-assignment-with-mb-bg-Byoerr-DP
 
 3. Open in a browser:
-   You can open the index.html file directly in your web browser.
-   or
-   Open project directory in VS code, View > Terminal; Then run command "npm run build" so webpage open in browser(Used browsersync plugin in gulpfile.js for same)
-   [Note: In project directory I also pushed node_module, so no need to install any node dependencies]
+   You can open the index.html file directly in your web browser.<br />
+   or<br />
+   Open project directory in VS code, View > Terminal; Then run command "npm run build" so webpage open in browser(Used browsersync plugin in gulpfile.js for same, it take some seconds to build and run project) [Note: In project directory I also pushed node_module, so no need to install any node dependencies]
 
 Accessibility Compliance (WCAG 2.1)
 This project was audited and updated to meet WCAG 2.1 AA standards. Key improvements include:

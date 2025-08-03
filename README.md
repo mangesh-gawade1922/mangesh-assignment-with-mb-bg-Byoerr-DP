@@ -1,4 +1,4 @@
-(Note: In this respository, in small devices continue with background image as per design has in desktop view)
+****(Note: In this respository, in small devices continue with background image as per design has in desktop view)****
 
 Byoerr -
 This project is a high-fidelity, fully responsive, and accessible implementation of a single-page design for "Byoerr". It is built with modern web standards, focusing on semantic HTML, performance, and compliance with WCAG 2.1 AA guidelines.

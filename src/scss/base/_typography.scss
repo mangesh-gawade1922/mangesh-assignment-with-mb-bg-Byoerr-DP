@@ -1,0 +1,89 @@
+@use '../abstracts' as *;
+
+body {
+    color: $white;
+    font-family: $font-inter;
+    @include font-size(16);
+    line-height: 1.2;
+    &.bg-primary {
+        background-color: $black-stallion;
+    }
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+
+h1 {
+    @include font-size(40);
+    line-height: 1.6;
+    @include max-width(767.98px){
+        @include font-size(32);
+        line-height: 1.4;
+    }
+    @include max-width(479.98px){
+        @include font-size(28);
+        line-height: 1.2;
+    }
+}
+
+h2 {
+    @include font-size(36);
+    line-height: 1.4;
+    @include max-width(767.98px){
+        @include font-size(28);
+        line-height: 1.2;
+    }
+    @include max-width(479.98px){
+        @include font-size(24);
+        line-height: 1.2;
+    }
+}
+
+h3 {
+    @include font-size(28);
+    line-height: 1.2;
+    @include max-width(767.98px){
+        @include font-size(24);
+        line-height: 1.2;
+    }
+    @include max-width(479.98px){
+        @include font-size(20);
+        line-height: 1.2;
+    }
+}
+
+h4 {
+    @include font-size(24);
+    line-height: 1.2;
+    @include max-width(767.98px){
+        @include font-size(20);
+        line-height: 1.2;
+    }
+    @include max-width(479.98px){
+        @include font-size(18);
+        line-height: 1;
+    }
+}
+
+h5{
+    @include font-size(20);
+    line-height: 1.2;
+    @include max-width(767.98px){
+        @include font-size(18);
+        line-height: 1;
+    }
+    @include max-width(479.98px){
+        @include font-size(16);
+        line-height: 1;
+    }
+}
+
+p {
+    @include font-size(14);
+    line-height: 1.4;
+    @include min-width(1199.98px) {
+        @include font-size(20);
+        line-height: 1.6;
+    }
+}

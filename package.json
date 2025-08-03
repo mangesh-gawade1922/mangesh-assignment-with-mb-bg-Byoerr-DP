@@ -1,0 +1,21 @@
+{
+  "name": "gulp-setup-basic",
+  "version": "1.0.0",
+  "description": "Simple Gulp setup for Node.js 16",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}

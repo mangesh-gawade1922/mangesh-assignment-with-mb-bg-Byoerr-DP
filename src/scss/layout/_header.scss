@@ -1,0 +1,26 @@
+@use '../abstracts' as *;
+
+header {
+
+  .search-block {
+    padding: 10px 0 10px 40px;
+    .fa-search {
+      color: $black-stallion;
+      @include font-size(22);
+    }
+  }
+
+  &.scrolled-header {
+    background: linear-gradient(to left, rgba(15, 25, 34, 0.8) 0%, rgba(255, 255, 255, 0.9) 100%);
+    #navbarNav {
+      .nav-link {
+        color: $white;
+      }
+    }
+    .search-block {
+      .fa-search {
+        color: $white;
+      }
+    }
+  }
+}

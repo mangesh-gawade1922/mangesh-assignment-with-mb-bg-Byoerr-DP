@@ -1,0 +1,4 @@
+// Function for convert px to rem
+@function pxToRem($pxSize) {
+    @return calc($pxSize / 16) + rem;
+}

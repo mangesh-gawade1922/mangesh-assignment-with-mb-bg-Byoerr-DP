@@ -1,0 +1,74 @@
+@use '../abstracts' as *;
+
+#contact {
+  background-image: url('../images/top-banner-bg.jpg');
+  background-size: 180%;
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  @include min-width(576.98px) {
+    background-size: 110%;
+  }
+  @include min-width(767.98px) {
+    background-size: 100%;
+    background-position: center 82%;
+  }
+}
+.form-wrapper {
+  margin: 0 auto;
+  form {
+    &#contact-form {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .contact-email-field {
+      background: rgba(255, 255, 255, 0.1) url('../images/envelope-icon.png') no-repeat 16px center;
+      color: $white;
+      flex: 1;
+      @include font-size(20);
+      line-height: 1;
+      max-width: 100%;
+      padding: 20px 200px 20px 54px;
+      border: 0 none;
+      border-radius: 16px;
+      @include max-width(767.98px) {
+        @include font-size(16);
+      }
+      @include max-width(576px) {
+        padding: 20px 20px 20px 54px;
+      }
+    }
+    button {
+      border-radius: 8px;
+      @include font-size(24);
+      line-height: 1.4;
+      border: 0;
+      background-color: $black-stallion;
+      color: $white;
+      min-width: 184px;
+      padding: 16px 0;
+      transition: background-color 0.3s ease-in-out;
+      &:hover {
+        background-color: rgba(0, 151, 255, 0.5);
+      }
+      @include max-width(767.98px) {
+        @include font-size(16);
+      }
+      @include min-width(576.98px) {
+        position: absolute;
+        right: 6px;
+        height: 80%;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0;
+      }
+      @include min-width(993px) {
+        min-width: 136px;
+      }
+      @include min-width(1023.99px) {
+        min-width: 184px;
+      }
+    }
+  }
+}

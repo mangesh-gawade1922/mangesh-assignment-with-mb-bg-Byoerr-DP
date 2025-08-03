@@ -1,0 +1,79 @@
+@use '../abstracts' as *;
+
+.main-footer {
+  background-color: $indigo-black;
+  .site-identity-block {
+    text-decoration: none;
+    color: $white;
+    max-width: 110px;
+  }
+  .footer-site-name {
+    @include font-size(36);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 32px;
+    a {
+      .fa {
+          &::before {
+            color: $white;
+            @include font-size(24);
+            transition: color 0.3s ease-in-out;
+          }
+        }
+        &:hover {
+          .fa {
+            &.fa-facebook {
+              &::before {
+                color: $blue-nebula;
+              }
+            }
+            &.fa-twitter {
+              &::before {
+                color: $blue-karimun;
+              }
+            }
+            &.fa-instagram {
+              &::before {
+                color: $medium-red-violet;
+              }
+            }
+            &.fa-linkedin {
+              &::before {
+                color: $blue-diamond;
+              }
+            }
+            &.fa-youtube-play {
+              &::before {
+                color: $red;
+              }
+            }
+          }
+        }
+    }
+  }
+
+  //quick links
+  .menu-title {
+    line-height: 1.4;
+    margin-bottom: 22px;
+  }
+  .quick-links,
+  .resources-links {
+    li {
+      margin: 0 0 16px;
+      a {
+        display: inline-block;
+        color: $white;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+        &:hover {
+          color: $starleft-blue;
+        }
+      }
+    }
+  }
+}

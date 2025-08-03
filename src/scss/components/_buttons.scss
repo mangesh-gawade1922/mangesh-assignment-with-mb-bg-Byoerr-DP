@@ -1,0 +1,70 @@
+@use '../abstracts' as *;
+
+.btn {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+  background: rgba(255, 255, 255, 0.3);
+  &.btn-primary {
+    border-radius: 16px;
+    border: 0 none;
+    @include font-size(16);
+    line-height: 1;
+    position: relative;
+    transition: background-image 0.3s ease-in-out;
+    padding: 16px 46px 16px 30px;
+    @include min-width(1023.98px) {
+      @include font-size(24);
+      line-height: 1.4;
+      padding: 16px 80px 16px 40px;
+    }
+
+    &:hover {
+      background-color: rgba(0, 151, 255, 0.5);
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 82%;
+      height: 1px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      z-index: 1;
+      transform: translateX(-50%);
+    }
+    &::before {
+      background-image: url('../images/btn-top-bg.png');
+      top: 0px;
+    }
+    &::after {
+      background-image: url('../images/btn-bottom-bg.png');
+      bottom: 0px;
+    }
+  }
+  .fa {
+    @include font-size(34);
+    margin-right: 8px;
+    top: 4px;
+    position: relative;
+  }
+  &.btn-secondary {
+    border: 1px solid $white;
+    border-radius: 8px;
+    padding: 14px 40px;
+    @include font-size(16);
+    &:hover {
+      background-color: rgba(0, 151, 255, 0.5);
+    }
+  }
+  &.btn-right-arrow {
+    background-image: url("../images/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: right 34px center;
+    @include max-width(1023.98px) {
+      background-position: right 18px center;
+      background-size: 20px;
+    }
+  }
+}
+
+

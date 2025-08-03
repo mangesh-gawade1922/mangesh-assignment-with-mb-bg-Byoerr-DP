@@ -1,0 +1,36 @@
+@use '../abstracts/functions' as *;
+@use '../abstracts/variables' as *;
+
+// Mixin for font size PX to REM
+@mixin font-size($pxSize) {
+    font-size: pxToRem($pxSize);
+}
+
+// Mixin for left blue strip
+@mixin left-blue-strip {
+  position: relative;
+  padding-left: 32px;
+  &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 4px;
+      height: 100%;
+      border-left: 4px solid $starleft-blue;
+  }
+}
+
+/// Mixin for min-width media query
+@mixin min-width($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+/// Mixin for max-width media query
+@mixin max-width($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
